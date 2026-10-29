@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "sourceHash": "f42e68a483e3a620e1a51dc54135c2ba737743142ebe51b90542f35325769d77",
+  "checkedAt": "2026-10-29T13:29:36.145Z",
+  "screenshots": [
+    "evidence/prism-desktop.png",
+    "evidence/prism-mobile.png",
+    "evidence/prism-tutorial-mobile.png",
+    "evidence/prism-ending.png",
+    "evidence/prism-assessment-mobile.png",
+    "evidence/prism-report.png"
+  ],
+  "gameplay": {
+    "allStagesActualBrowserWon": 12,
+    "solutionFile": "evidence/solutions.json",
+    "deadEnd": "Round 4 D first blocks at 120°; undo restores 60° with 2/3 charges",
+    "persistence": "12/12 collection and stage 10 endpoint 110° restored after reload and replay/skip",
+    "tutorial": {
+      "desktopFirstWin": true,
+      "mobileFirstWin": true,
+      "keyboard": true,
+      "skip": true,
+      "replay": true,
+      "isolatedProgress": true
+    },
+    "sound": "Sound check rendered confirmation after nonzero audio analyser peak; no human audibility claim",
+    "consoleErrors": []
+  },
+  "assessment": {
+    "codes": [
+      "9수03-05"
+    ],
+    "independent": true,
+    "hint": true,
+    "retry": true,
+    "persistence": true,
+    "report": true,
+    "export": true,
+    "mobile": true,
+    "details": "10 submissions: wrong 115 then retry 65 excluded; one hinted exterior excluded; independent counts 2/2,2/2,3/2; explanation and teacher note persisted; export preview JSON contains 10 attempts, 1 hint and reviewed result. All synthetic local test data."
+  },
+  "typography": {
+    "status": "passed",
+    "mobileWidth": 390,
+    "fonts": [
+      "Jua",
+      "Do Hyeon",
+      "Gowun Dodum"
+    ],
+    "horizontalOverflow": false
+  },
+  "limits": "No student playtest; learning coverage limited to triangle angle relations. Deployment pending user Vercel import."
+}

@@ -1,0 +1,45 @@
+{
+  "visualReview": true,
+  "references": [
+    {
+      "filename": "미래엔_중학교수학1_교과서_6-2_삼각형의내각과외각.pdf",
+      "sha256": "09a6f1ae31e3e49851b98e2a63c025873c42e03f7643452f7312e2b3fca375cd",
+      "pdfPages": [
+        1,
+        2,
+        3
+      ],
+      "printedPages": [
+        187,
+        188,
+        189
+      ],
+      "concepts": [
+        "삼각형 세 내각 합 180°",
+        "한 외각은 이웃하지 않는 두 내각의 합"
+      ],
+      "visualReview": {
+        "pages": [
+          1
+        ],
+        "internalImage": "curriculum/prism-triangle-1.png"
+      }
+    }
+  ],
+  "curriculum": {
+    "code": "9수03-05",
+    "standardPages": [
+      44
+    ],
+    "interpretationPages": [
+      45
+    ],
+    "scope": "삼각형의 내각·외각 관계 부분. 일반 다각형과 대각선은 평가하지 않음."
+  },
+  "misconceptions": [
+    "외각을 세 내각 중 하나로 혼동",
+    "외각에 바로 이웃한 내각을 더함",
+    "그림의 겉모양만으로 각도를 추정"
+  ],
+  "originalMaterialsExcluded": true
+}

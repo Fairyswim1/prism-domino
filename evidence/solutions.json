@@ -1,0 +1,342 @@
+[
+  {
+    "id": 1,
+    "route": [
+      {
+        "id": "A",
+        "flip": false
+      },
+      {
+        "id": "B",
+        "flip": true
+      },
+      {
+        "id": "C",
+        "flip": false
+      }
+    ],
+    "greedy": "won"
+  },
+  {
+    "id": 2,
+    "route": [
+      {
+        "id": "A",
+        "flip": true
+      },
+      {
+        "id": "B",
+        "flip": false
+      },
+      {
+        "id": "C",
+        "flip": true
+      },
+      {
+        "id": "D",
+        "flip": false
+      }
+    ],
+    "greedy": "won"
+  },
+  {
+    "id": 3,
+    "route": [
+      {
+        "id": "A",
+        "flip": true
+      },
+      {
+        "id": "B",
+        "flip": false
+      },
+      {
+        "id": "C",
+        "flip": true
+      },
+      {
+        "id": "D",
+        "flip": false
+      }
+    ],
+    "greedy": "won"
+  },
+  {
+    "id": 4,
+    "route": [
+      {
+        "id": "C",
+        "flip": false
+      },
+      {
+        "id": "B",
+        "flip": true
+      },
+      {
+        "id": "A",
+        "flip": false
+      },
+      {
+        "id": "D",
+        "flip": false
+      }
+    ],
+    "greedy": "lost"
+  },
+  {
+    "id": 5,
+    "route": [
+      {
+        "id": "C",
+        "flip": true
+      },
+      {
+        "id": "B",
+        "flip": false
+      },
+      {
+        "id": "A",
+        "flip": true
+      },
+      {
+        "id": "D",
+        "flip": true
+      },
+      {
+        "id": "E",
+        "flip": false
+      }
+    ],
+    "greedy": "lost"
+  },
+  {
+    "id": 6,
+    "route": [
+      {
+        "id": "C",
+        "flip": false
+      },
+      {
+        "id": "B",
+        "flip": true
+      },
+      {
+        "id": "A",
+        "flip": false
+      },
+      {
+        "id": "D",
+        "flip": false
+      },
+      {
+        "id": "E",
+        "flip": true
+      },
+      {
+        "id": "F",
+        "flip": false
+      }
+    ],
+    "greedy": "lost"
+  },
+  {
+    "id": 7,
+    "route": [
+      {
+        "id": "C",
+        "flip": true
+      },
+      {
+        "id": "B",
+        "flip": false
+      },
+      {
+        "id": "A",
+        "flip": true
+      },
+      {
+        "id": "D",
+        "flip": true
+      },
+      {
+        "id": "E",
+        "flip": false
+      }
+    ],
+    "greedy": "lost"
+  },
+  {
+    "id": 8,
+    "route": [
+      {
+        "id": "C",
+        "flip": false
+      },
+      {
+        "id": "B",
+        "flip": true
+      },
+      {
+        "id": "A",
+        "flip": false
+      },
+      {
+        "id": "D",
+        "flip": false
+      },
+      {
+        "id": "E",
+        "flip": true
+      },
+      {
+        "id": "F",
+        "flip": false
+      }
+    ],
+    "greedy": "lost"
+  },
+  {
+    "id": 9,
+    "route": [
+      {
+        "id": "C",
+        "flip": true
+      },
+      {
+        "id": "B",
+        "flip": false
+      },
+      {
+        "id": "A",
+        "flip": true
+      },
+      {
+        "id": "D",
+        "flip": true
+      },
+      {
+        "id": "F",
+        "flip": false
+      },
+      {
+        "id": "E",
+        "flip": true
+      },
+      {
+        "id": "G",
+        "flip": false
+      }
+    ],
+    "greedy": "lost"
+  },
+  {
+    "id": 10,
+    "route": [
+      {
+        "id": "F",
+        "flip": false
+      },
+      {
+        "id": "E",
+        "flip": true
+      },
+      {
+        "id": "D",
+        "flip": false
+      },
+      {
+        "id": "C",
+        "flip": true
+      },
+      {
+        "id": "B",
+        "flip": false
+      },
+      {
+        "id": "A",
+        "flip": true
+      },
+      {
+        "id": "G",
+        "flip": false
+      }
+    ],
+    "greedy": "lost"
+  },
+  {
+    "id": 11,
+    "route": [
+      {
+        "id": "G",
+        "flip": false
+      },
+      {
+        "id": "F",
+        "flip": true
+      },
+      {
+        "id": "E",
+        "flip": false
+      },
+      {
+        "id": "D",
+        "flip": true
+      },
+      {
+        "id": "C",
+        "flip": false
+      },
+      {
+        "id": "B",
+        "flip": true
+      },
+      {
+        "id": "A",
+        "flip": false
+      },
+      {
+        "id": "H",
+        "flip": false
+      }
+    ],
+    "greedy": "lost"
+  },
+  {
+    "id": 12,
+    "route": [
+      {
+        "id": "D",
+        "flip": false
+      },
+      {
+        "id": "G",
+        "flip": false
+      },
+      {
+        "id": "B",
+        "flip": false
+      },
+      {
+        "id": "C",
+        "flip": true
+      },
+      {
+        "id": "A",
+        "flip": true
+      },
+      {
+        "id": "F",
+        "flip": true
+      },
+      {
+        "id": "E",
+        "flip": false
+      },
+      {
+        "id": "H",
+        "flip": false
+      }
+    ],
+    "greedy": "lost"
+  }
+]

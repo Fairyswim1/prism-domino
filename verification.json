@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "checkedAt": "2026-10-29T13:29:36.464Z",
+  "sourceHash": "f42e68a483e3a620e1a51dc54135c2ba737743142ebe51b90542f35325769d77",
+  "testsPassed": true,
+  "errors": [],
+  "browser": "passed"
+}

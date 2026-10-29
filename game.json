@@ -1,0 +1,50 @@
+{
+  "id": "prism-domino",
+  "title": "프리즘 도미노",
+  "subtitle": "각도로 잇는 빛",
+  "version": "1.0.0",
+  "grade": 1,
+  "unit": "6-2 삼각형의 내각과 외각",
+  "status": "playable",
+  "description": "삼각형의 빈 각을 생각하고 같은 각도끼리 도미노를 이어요. 마지막에 필요한 조각을 남기며 12개의 빛의 길을 완성하고, 프리즘을 모아 온실을 밝히는 연결 퍼즐입니다.",
+  "category": "도형과 측정",
+  "tags": [
+    "삼각형 내각·외각",
+    "도미노",
+    "남길 조각"
+  ],
+  "duration": "25–45분",
+  "assets": [
+    "assets/background.png",
+    "assets/domino.png",
+    "assets/button.png",
+    "assets/guide.png",
+    "assets/prism.png"
+  ],
+  "generatedRoles": {
+    "background": "assets/background.png",
+    "interactiveProp": "assets/domino.png",
+    "controls": "assets/button.png",
+    "character": "assets/guide.png",
+    "reward": "assets/prism.png",
+    "roundNavigation": "assets/prism.png"
+  },
+  "obstacles": "이어지지 않는 끝과 먼저 사용하면 다른 조각을 고립시키는 연결 순서. 별도 적 없음.",
+  "tutorial": {
+    "version": 1,
+    "firstVisit": true,
+    "spotlight": true,
+    "steps": 7,
+    "skippable": true,
+    "replay": true,
+    "practiceProgress": "isolated-memory"
+  },
+  "campaign": {
+    "rounds": 12,
+    "collectibles": 12,
+    "chapters": 3,
+    "ending": true
+  },
+  "repository": "https://github.com/Fairyswim1/prism-domino",
+  "repositoryStatus": "created"
+}
