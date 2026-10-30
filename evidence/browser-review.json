@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "sourceHash": "65cd94a96ffdab491e261f4e41a24a144607ab1900fe86af28d32b1a42033c0a",
-  "checkedAt": "2026-10-30T01:16:43.467Z",
+  "sourceHash": "e59d43e1bdff3bc506ecbfe7dbcc55301bf04d5228efd44499ac685853da696e",
+  "checkedAt": "2026-10-30T01:36:09.228Z",
   "screenshots": [
     "evidence/prism-flip-desktop.png",
     "evidence/prism-mobile-insets.png",
@@ -11,7 +11,12 @@
     "evidence/prism-ending.png",
     "evidence/prism-assessment-mobile.png",
     "evidence/prism-report.png",
-    "evidence/student-copy.png"
+    "evidence/student-copy.png",
+    "evidence/prism-angle-desktop.png",
+    "evidence/prism-angle-mobile.png",
+    "evidence/prism-angle-narrow.png",
+    "evidence/prism-angle-outer-desktop.png",
+    "evidence/prism-angle-mobile-outer.png"
   ],
   "gameplay": {
     "allStagesActualBrowserWon": 12,
@@ -75,5 +80,99 @@
     "reportOpened": true,
     "proceduralExplanationRemoved": true,
     "scope": "Copy-only: gameplay and assessment logic unchanged. Prior gameplay/assessment evidence retained; current tests and build passed."
+  },
+  "previousAngleReview": {
+    "sourceHash": "65cd94a96ffdab491e261f4e41a24a144607ab1900fe86af28d32b1a42033c0a",
+    "checkedAt": "2026-10-30T01:16:43.467Z"
+  },
+  "angleLayoutRevision": {
+    "scope": "SVG label placement only; previous gameplay and assessment evidence retained for unchanged logic",
+    "inner": "All 12 round hands examined in browser; all 68 inner label bounding rectangles within triangle edges",
+    "measurements": [
+      {
+        "round": 1,
+        "faces": 0,
+        "minGap": null,
+        "minHeight": null
+      },
+      {
+        "round": 2,
+        "faces": 0,
+        "minGap": null,
+        "minHeight": null
+      },
+      {
+        "round": 3,
+        "faces": 8,
+        "minGap": 6.696293805010072,
+        "minHeight": 24.27184677124023
+      },
+      {
+        "round": 4,
+        "faces": 8,
+        "minGap": 5.558178269832226,
+        "minHeight": 24.27181625366211
+      },
+      {
+        "round": 5,
+        "faces": 10,
+        "minGap": 4.397600891372036,
+        "minHeight": 24.27184677124023
+      },
+      {
+        "round": 6,
+        "faces": 12,
+        "minGap": 5.558207555155931,
+        "minHeight": 24.27184677124023
+      },
+      {
+        "round": 7,
+        "faces": 0,
+        "minGap": null,
+        "minHeight": null
+      },
+      {
+        "round": 8,
+        "faces": 0,
+        "minGap": null,
+        "minHeight": null
+      },
+      {
+        "round": 9,
+        "faces": 7,
+        "minGap": 2.2502142633253897,
+        "minHeight": 23.30097198486328
+      },
+      {
+        "round": 10,
+        "faces": 7,
+        "minGap": 2.2502289059872425,
+        "minHeight": 23.30097198486328
+      },
+      {
+        "round": 11,
+        "faces": 8,
+        "minGap": 2.5756428471740804,
+        "minHeight": 14.56310749053955
+      },
+      {
+        "round": 12,
+        "faces": 8,
+        "minGap": 4.397571606048331,
+        "minHeight": 24.27184677124023
+      }
+    ],
+    "outer": "Labels use actual exterior wedge; round 11 30+30 and 55+65 faces inspected on desktop and 390px",
+    "preview": "Round 11 F selected and flipped, hand and preview agree",
+    "mobile": {
+      "width": 390,
+      "scrollWidth": 376,
+      "rounds": [
+        4,
+        11
+      ],
+      "passed": true
+    },
+    "tests": 24
   }
 }

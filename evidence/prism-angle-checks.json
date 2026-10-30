@@ -1,0 +1,74 @@
+[
+  {
+    "round": 1,
+    "faces": 0,
+    "minGap": null,
+    "minHeight": null
+  },
+  {
+    "round": 2,
+    "faces": 0,
+    "minGap": null,
+    "minHeight": null
+  },
+  {
+    "round": 3,
+    "faces": 8,
+    "minGap": 6.696293805010072,
+    "minHeight": 24.27184677124023
+  },
+  {
+    "round": 4,
+    "faces": 8,
+    "minGap": 5.558178269832226,
+    "minHeight": 24.27181625366211
+  },
+  {
+    "round": 5,
+    "faces": 10,
+    "minGap": 4.397600891372036,
+    "minHeight": 24.27184677124023
+  },
+  {
+    "round": 6,
+    "faces": 12,
+    "minGap": 5.558207555155931,
+    "minHeight": 24.27184677124023
+  },
+  {
+    "round": 7,
+    "faces": 0,
+    "minGap": null,
+    "minHeight": null
+  },
+  {
+    "round": 8,
+    "faces": 0,
+    "minGap": null,
+    "minHeight": null
+  },
+  {
+    "round": 9,
+    "faces": 7,
+    "minGap": 2.2502142633253897,
+    "minHeight": 23.30097198486328
+  },
+  {
+    "round": 10,
+    "faces": 7,
+    "minGap": 2.2502289059872425,
+    "minHeight": 23.30097198486328
+  },
+  {
+    "round": 11,
+    "faces": 8,
+    "minGap": 2.5756428471740804,
+    "minHeight": 14.56310749053955
+  },
+  {
+    "round": 12,
+    "faces": 8,
+    "minGap": 4.397571606048331,
+    "minHeight": 24.27184677124023
+  }
+]
