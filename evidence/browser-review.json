@@ -1,45 +1,19 @@
 {
   "status": "passed",
-  "sourceHash": "7b7f739d81c3f7998c3f00b696f5d0625d10535192f48c2339a65c2ac3bd5d18",
-  "checkedAt": "2026-10-30T06:17:08.914Z",
+  "checkedAt": "2026-10-30T07:51:44.915Z",
+  "sourceHash": "03a05e35219c30e0c6cc36c96c7854771b0ea4f1763df5f9b7671bbaefbddae5",
   "screenshots": [
-    "evidence/prism-flip-desktop.png",
-    "evidence/prism-mobile-insets.png",
-    "evidence/prism-desktop.png",
-    "evidence/prism-mobile.png",
-    "evidence/prism-tutorial-mobile.png",
-    "evidence/prism-ending.png",
-    "evidence/prism-assessment-mobile.png",
-    "evidence/prism-report.png",
-    "evidence/student-copy.png",
-    "evidence/prism-angle-desktop.png",
-    "evidence/prism-angle-mobile.png",
-    "evidence/prism-angle-narrow.png",
-    "evidence/prism-angle-outer-desktop.png",
-    "evidence/prism-angle-mobile-outer.png",
-    "evidence/prism-vertex-desktop.png",
-    "evidence/prism-vertex-flip.png",
-    "evidence/prism-vertex-mobile.png",
-    "evidence/prism-vertex-mobile-narrow.png",
-    "evidence/prism-arc-desktop.png",
-    "evidence/prism-arc-mobile.png"
+    "evidence/math-prism-domino-desktop.png",
+    "evidence/math-prism-domino-mobile.png",
+    "evidence/math-prism-domino-assessment.png",
+    "evidence/math-tutorial.png"
   ],
-  "gameplay": {
-    "allStagesActualBrowserWon": 12,
-    "solutionFile": "evidence/solutions.json",
-    "deadEnd": "Round 4 D first blocks at 120°; undo restores 60° with 2/3 charges",
-    "persistence": "12/12 collection and stage 10 endpoint 110° restored after reload and replay/skip",
-    "tutorial": {
-      "desktopFirstWin": true,
-      "mobileFirstWin": true,
-      "keyboard": true,
-      "skip": true,
-      "replay": true,
-      "isolatedProgress": true
-    },
-    "sound": "Sound check rendered confirmation after nonzero audio analyser peak; no human audibility claim",
-    "consoleErrors": []
-  },
+  "checks": [
+    "All stage starting layouts checked at 390px; desktop final-stage screenshot inspected.",
+    "No horizontal page or measured math-container overflow; no KaTeX error nodes.",
+    "Actual independent assessment submission correct; all available task layouts checked at 390px.",
+    "A, flipped B, C connected to victory; tutorial replay/skip restored progress."
+  ],
   "assessment": {
     "codes": [
       "9수03-05"
@@ -51,411 +25,30 @@
     "report": true,
     "export": false,
     "mobile": true,
-    "details": "10 submissions: wrong 115 then retry 65 excluded; one hinted exterior excluded; independent counts 2/2,2/2,3/2; explanation and teacher note persisted; export preview JSON contains 10 attempts, 1 hint and reviewed result. All synthetic local test data.",
+    "details": "This revision: actual correct first-task submission and mobile task layouts. Shared radio UI keyboard, wrong response, hint, retry, reload and report tested in Ember Slide. Earlier per-standard grading/report coverage is preserved in browser-review-before-latex.json; grading and persistence algorithms unchanged.",
     "jsonUiRemoved": true
   },
   "typography": {
     "status": "passed",
     "mobileWidth": 390,
-    "fonts": [
-      "Jua",
-      "Do Hyeon",
-      "Gowun Dodum"
-    ],
-    "horizontalOverflow": false
-  },
-  "limits": "No student playtest; learning coverage limited to triangle angle relations.",
-  "previousFullReview": {
-    "checkedAt": "2026-10-29T13:29:36.145Z",
-    "sourceHash": "f42e68a483e3a620e1a51dc54135c2ba737743142ebe51b90542f35325769d77"
-  },
-  "uiRevision": {
-    "diagramInsets": true,
-    "desktopTwoColumns": true,
-    "mobile390NoOverflow": true,
-    "handAndPreviewOrientationMatch": true,
-    "orientationRetainedOnReselect": true,
-    "flippedTileConnectedAndRoundWon": true,
-    "consoleErrors": [],
-    "scope": "Rechecked changed presentation and flip selection flow. Existing engine, 12-stage solvability and assessment regression tests pass; unchanged assessment browser evidence retained from previous full review."
-  },
-  "previousCopyReview": {
-    "checkedAt": "2026-10-30T01:06:04.144Z",
-    "sourceHash": "46326c1a4a5291192055045cb7a04ed838620a10b1b15559f5437d92e09536f1"
-  },
-  "studentCopyRevision": {
-    "reportOpened": true,
-    "proceduralExplanationRemoved": true,
-    "scope": "Copy-only: gameplay and assessment logic unchanged. Prior gameplay/assessment evidence retained; current tests and build passed."
-  },
-  "previousAngleReview": {
-    "sourceHash": "65cd94a96ffdab491e261f4e41a24a144607ab1900fe86af28d32b1a42033c0a",
-    "checkedAt": "2026-10-30T01:16:43.467Z"
-  },
-  "angleLayoutRevision": {
-    "scope": "SVG label placement only; previous gameplay and assessment evidence retained for unchanged logic",
-    "inner": "All 12 round hands examined in browser; all 68 inner label bounding rectangles within triangle edges",
-    "measurements": [
-      {
-        "round": 1,
-        "faces": 0,
-        "minGap": null,
-        "minHeight": null
-      },
-      {
-        "round": 2,
-        "faces": 0,
-        "minGap": null,
-        "minHeight": null
-      },
-      {
-        "round": 3,
-        "faces": 8,
-        "minGap": 6.696293805010072,
-        "minHeight": 24.27184677124023
-      },
-      {
-        "round": 4,
-        "faces": 8,
-        "minGap": 5.558178269832226,
-        "minHeight": 24.27181625366211
-      },
-      {
-        "round": 5,
-        "faces": 10,
-        "minGap": 4.397600891372036,
-        "minHeight": 24.27184677124023
-      },
-      {
-        "round": 6,
-        "faces": 12,
-        "minGap": 5.558207555155931,
-        "minHeight": 24.27184677124023
-      },
-      {
-        "round": 7,
-        "faces": 0,
-        "minGap": null,
-        "minHeight": null
-      },
-      {
-        "round": 8,
-        "faces": 0,
-        "minGap": null,
-        "minHeight": null
-      },
-      {
-        "round": 9,
-        "faces": 7,
-        "minGap": 2.2502142633253897,
-        "minHeight": 23.30097198486328
-      },
-      {
-        "round": 10,
-        "faces": 7,
-        "minGap": 2.2502289059872425,
-        "minHeight": 23.30097198486328
-      },
-      {
-        "round": 11,
-        "faces": 8,
-        "minGap": 2.5756428471740804,
-        "minHeight": 14.56310749053955
-      },
-      {
-        "round": 12,
-        "faces": 8,
-        "minGap": 4.397571606048331,
-        "minHeight": 24.27184677124023
-      }
-    ],
-    "outer": "Labels use actual exterior wedge; round 11 30+30 and 55+65 faces inspected on desktop and 390px",
-    "preview": "Round 11 F selected and flipped, hand and preview agree",
-    "mobile": {
-      "width": 390,
-      "scrollWidth": 376,
-      "rounds": [
-        4,
-        11
-      ],
-      "passed": true
+    "fonts": {
+      "title": "Jua",
+      "display": "Do Hyeon",
+      "body": "Gowun Dodum",
+      "math": "KaTeX"
     },
-    "tests": 24
+    "checks": [
+      "Local fonts and license",
+      "Math contrast, safe card/button space and fraction/power rendering inspected"
+    ]
   },
-  "previousVertexReview": {
-    "sourceHash": "e59d43e1bdff3bc506ecbfe7dbcc55301bf04d5228efd44499ac685853da696e",
-    "checkedAt": "2026-10-30T01:36:09.228Z"
+  "previousReview": {
+    "sourceHash": "7b7f739d81c3f7998c3f00b696f5d0625d10535192f48c2339a65c2ac3bd5d18",
+    "checkedAt": "2026-10-30T06:17:08.914Z",
+    "file": "evidence/browser-review-before-latex.json"
   },
-  "vertexLabelRevision": {
-    "scope": "Only diagram question size and location; unchanged gameplay/assessment retain their previous reviews",
-    "size": "17 SVG units instead of 23; narrow triangles adapt to 90% of maximum fitting size",
-    "position": "Adjacent to both edges of unknown vertex C, 2-unit clearance",
-    "desktop": "All 12 rounds, 120 rendered diagram faces inspected for non-overlap",
-    "flip": "Round 5 D hand and preview",
-    "mobile": "390px, rounds 5 and 11 including narrow triangle and exterior faces",
-    "measurements": {
-      "desktop": [
-        {
-          "round": 1,
-          "faces": 0,
-          "minGap": null
-        },
-        {
-          "round": 2,
-          "faces": 0,
-          "minGap": null
-        },
-        {
-          "round": 3,
-          "faces": 8,
-          "minGap": 1.989077031840921
-        },
-        {
-          "round": 4,
-          "faces": 8,
-          "minGap": 1.989077031840921
-        },
-        {
-          "round": 5,
-          "faces": 10,
-          "minGap": 1.989077031840921
-        },
-        {
-          "round": 6,
-          "faces": 12,
-          "minGap": 1.9890770318409208
-        },
-        {
-          "round": 7,
-          "faces": 10,
-          "minGap": 1.989077031840921
-        },
-        {
-          "round": 8,
-          "faces": 12,
-          "minGap": 1.989077031840921
-        },
-        {
-          "round": 9,
-          "faces": 14,
-          "minGap": 1.9890770318409208
-        },
-        {
-          "round": 10,
-          "faces": 14,
-          "minGap": 1.9890770318409208
-        },
-        {
-          "round": 11,
-          "faces": 16,
-          "minGap": 1.989077031840921
-        },
-        {
-          "round": 12,
-          "faces": 16,
-          "minGap": 1.989077031840921
-        }
-      ],
-      "mobileRound11": [
-        {
-          "gap": 2.089863110529251,
-          "height": 14.56309986114502,
-          "inner": true
-        },
-        {
-          "gap": 2.089863110529251,
-          "height": 14.56309986114502,
-          "inner": false
-        },
-        {
-          "gap": 2.0898676945983254,
-          "height": 14.56310749053955,
-          "inner": true
-        },
-        {
-          "gap": 2.0898676945983254,
-          "height": 14.56310749053955,
-          "inner": false
-        },
-        {
-          "gap": 2.3901012987584664,
-          "height": 10.679612159729004,
-          "inner": true
-        },
-        {
-          "gap": 2.089849358322013,
-          "height": 14.56310749053955,
-          "inner": false
-        },
-        {
-          "gap": 2.390156307587304,
-          "height": 10.679612159729004,
-          "inner": true
-        },
-        {
-          "gap": 2.0899387476689384,
-          "height": 14.563048362731934,
-          "inner": false
-        },
-        {
-          "gap": 2.0899387476689384,
-          "height": 14.563048362731934,
-          "inner": true
-        },
-        {
-          "gap": 2.0899387476689384,
-          "height": 14.563048362731934,
-          "inner": false
-        },
-        {
-          "gap": 2.0899410397034757,
-          "height": 14.56310749053955,
-          "inner": true
-        },
-        {
-          "gap": 2.0899410397034757,
-          "height": 14.56310749053955,
-          "inner": false
-        },
-        {
-          "gap": 2.0898676945982544,
-          "height": 14.56310749053955,
-          "inner": true
-        },
-        {
-          "gap": 2.0898676945982544,
-          "height": 14.56310749053955,
-          "inner": false
-        },
-        {
-          "gap": 2.0898676945982544,
-          "height": 14.56310749053955,
-          "inner": true
-        },
-        {
-          "gap": 2.0898676945982544,
-          "height": 14.56310749053955,
-          "inner": false
-        },
-        {
-          "gap": 2.2208135505061364,
-          "height": 9.708738327026367,
-          "inner": true
-        },
-        {
-          "gap": 2.2780843904840538,
-          "height": 12.621359825134276,
-          "inner": false
-        }
-      ]
-    },
-    "tests": 25
-  },
-  "previousArcReview": {
-    "sourceHash": "24a6be4ad5d3169060b0d44249741ead1fb6ef717009ff32fb8cb2657a407cad",
-    "checkedAt": "2026-10-30T01:52:14.942Z"
-  },
-  "angleArcRevision": {
-    "scope": "Only target-angle SVG arc and minimal label separation; previous unchanged gameplay/assessment evidence retained",
-    "desktop": "120 diagram faces across all 12 rounds; each has one target-angle arc; labels stay within correct region",
-    "flip": "Round 5 D hand and preview",
-    "mobile": "390px round 11, inner, exterior and narrow triangle preview inspected",
-    "measurements": [
-      {
-        "round": 1,
-        "arcs": 0,
-        "diagrams": 0,
-        "minLabelEdgeGap": null
-      },
-      {
-        "round": 2,
-        "arcs": 0,
-        "diagrams": 0,
-        "minLabelEdgeGap": null
-      },
-      {
-        "round": 3,
-        "arcs": 8,
-        "diagrams": 8,
-        "minLabelEdgeGap": 1.989077031840921
-      },
-      {
-        "round": 4,
-        "arcs": 8,
-        "diagrams": 8,
-        "minLabelEdgeGap": 1.989077031840921
-      },
-      {
-        "round": 5,
-        "arcs": 10,
-        "diagrams": 10,
-        "minLabelEdgeGap": 1.989077031840921
-      },
-      {
-        "round": 6,
-        "arcs": 12,
-        "diagrams": 12,
-        "minLabelEdgeGap": 1.9890770318409208
-      },
-      {
-        "round": 7,
-        "arcs": 10,
-        "diagrams": 10,
-        "minLabelEdgeGap": 1.989077031840921
-      },
-      {
-        "round": 8,
-        "arcs": 12,
-        "diagrams": 12,
-        "minLabelEdgeGap": 1.989077031840921
-      },
-      {
-        "round": 9,
-        "arcs": 14,
-        "diagrams": 14,
-        "minLabelEdgeGap": 1.9890770318409208
-      },
-      {
-        "round": 10,
-        "arcs": 14,
-        "diagrams": 14,
-        "minLabelEdgeGap": 1.9890770318409208
-      },
-      {
-        "round": 11,
-        "arcs": 16,
-        "diagrams": 16,
-        "minLabelEdgeGap": 1.989077031840921
-      },
-      {
-        "round": 12,
-        "arcs": 16,
-        "diagrams": 16,
-        "minLabelEdgeGap": 1.989077031840921
-      }
-    ],
-    "tests": 26
-  },
-  "previousJsonUiReview": {
-    "checkedAt": "2026-10-30T02:47:05.959Z",
-    "sourceHash": "73650731d4497b9efb75816c30c44c13ef5f513850a17a99e7c8c0e877d4dbb7",
-    "export": true
-  },
-  "jsonUiRemoval": {
-    "status": "passed",
-    "checkedAt": "2026-10-30T06:16:46.888Z",
-    "scope": "JSON raw preview and download removed. Readable learning results and local progress storage retained. Gameplay, assessment grading and layout otherwise unchanged.",
-    "report": {
-      "id": "prism-domino",
-      "report": true,
-      "noJson": true,
-      "exportButtons": 0,
-      "errors": []
-    },
-    "commonSubmission": {
-      "submitted": true,
-      "result": "내 답: 방정식",
-      "persistedAfterReload": true
-    }
-  }
+  "limitations": [
+    "This revision checks all starting layouts, representative play and the existing complete engine test suite; it does not replay every stage to victory.",
+    "No student learning-effect study."
+  ]
 }

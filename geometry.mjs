@@ -1,3 +1,4 @@
+import {svgMath,mathHtml} from './math-display.mjs';
 export function describe(f){return f.kind==='given'?f.value+'°':(f.kind==='inner'?'삼각형 내각 ?':'삼각형 외각 ?')+' · 다른 두 내각 '+f.a+'°, '+f.b+'°';}
 
 export function triangleLayout(f){
@@ -52,10 +53,10 @@ function withAngleArc(f,points,question){
 }
 
 export function diagram(f){
-  if(f.kind==='given')return '<div class="given">'+f.value+'<small>°</small></div>';
+  if(f.kind==='given')return '<div class="given">'+mathHtml(f.value+'°')+'</div>';
   const {points,question:q,arc}=triangleLayout(f),[a,b,c]=points;
   const fmt=p=>p.map(n=>n.toFixed(2)).join(','),ext=f.kind==='outer';
   const marker='<path class="angle-arc" d="M'+fmt(arc.start)+' A'+arc.radius.toFixed(2)+','+arc.radius.toFixed(2)+' 0 0 '+arc.sweep+' '+fmt(arc.end)+'" fill="none" stroke="#ac5e32" stroke-width="1.6" stroke-linecap="round"/>';
   const question='<text class="unknown" text-anchor="middle" x="'+q.x+'" y="'+q.y+'"'+' dominant-baseline="central" style="font-size:'+q.size+'px"'+'>?</text>';
-  return '<svg viewBox="0 0 160 132" aria-hidden="true"><path d="M'+fmt(a)+' L'+fmt(b)+' L'+fmt(c)+' Z" fill="#e1eadb" stroke="#385d60" stroke-width="2.2"/>'+(ext?'<path d="M'+fmt(c)+' l27,0" stroke="#ac5e32" stroke-width="2.2"/>':'')+'<text x="'+(a[0]+2)+'" y="114">'+f.a+'°</text><text text-anchor="middle" x="'+b[0]+'" y="'+Math.max(15,b[1]-7)+'">'+f.b+'°</text>'+marker+question+'<text class="caption" x="80" y="129" text-anchor="middle">'+(ext?'바깥 각':'안쪽 각')+'</text></svg>';
+  return '<svg viewBox="0 0 160 132" aria-hidden="true"><path d="M'+fmt(a)+' L'+fmt(b)+' L'+fmt(c)+' Z" fill="#e1eadb" stroke="#385d60" stroke-width="2.2"/>'+(ext?'<path d="M'+fmt(c)+' l27,0" stroke="#ac5e32" stroke-width="2.2"/>':'')+svgMath(f.a+'°',a[0],97,44,25)+svgMath(f.b+'°',Math.max(0,b[0]-22),Math.max(0,b[1]-27),44,25,'center')+marker+question+'<text class="caption" x="80" y="129" text-anchor="middle">'+(ext?'바깥 각':'안쪽 각')+'</text></svg>';
 }
