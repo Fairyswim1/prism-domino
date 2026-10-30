@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "sourceHash": "46326c1a4a5291192055045cb7a04ed838620a10b1b15559f5437d92e09536f1",
-  "checkedAt": "2026-10-30T01:06:04.144Z",
+  "sourceHash": "65cd94a96ffdab491e261f4e41a24a144607ab1900fe86af28d32b1a42033c0a",
+  "checkedAt": "2026-10-30T01:16:43.467Z",
   "screenshots": [
     "evidence/prism-flip-desktop.png",
     "evidence/prism-mobile-insets.png",
@@ -10,7 +10,8 @@
     "evidence/prism-tutorial-mobile.png",
     "evidence/prism-ending.png",
     "evidence/prism-assessment-mobile.png",
-    "evidence/prism-report.png"
+    "evidence/prism-report.png",
+    "evidence/student-copy.png"
   ],
   "gameplay": {
     "allStagesActualBrowserWon": 12,
@@ -65,5 +66,14 @@
     "flippedTileConnectedAndRoundWon": true,
     "consoleErrors": [],
     "scope": "Rechecked changed presentation and flip selection flow. Existing engine, 12-stage solvability and assessment regression tests pass; unchanged assessment browser evidence retained from previous full review."
+  },
+  "previousCopyReview": {
+    "checkedAt": "2026-10-30T01:06:04.144Z",
+    "sourceHash": "46326c1a4a5291192055045cb7a04ed838620a10b1b15559f5437d92e09536f1"
+  },
+  "studentCopyRevision": {
+    "reportOpened": true,
+    "proceduralExplanationRemoved": true,
+    "scope": "Copy-only: gameplay and assessment logic unchanged. Prior gameplay/assessment evidence retained; current tests and build passed."
   }
 }
