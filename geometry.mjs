@@ -11,22 +11,24 @@ export function triangleLayout(f){
   const [a,b,c]=points;
   if(!inner){
     // Keep the complete question mark in the exterior wedge, above the extension.
-    const size=23,w=.32*size,h=.52*size,dx=b[0]-c[0],dy=b[1]-c[1];
+    const size=17,w=.32*size,h=.52*size,dx=b[0]-c[0],dy=b[1]-c[1];
     const offset=Math.max(w+2,w+(2*Math.hypot(dx,dy)+dx*(2*h+2))/-dy);
     return {points,question:{x:c[0]+offset,y:c[1]-h-2,size}};
   }
 
-  // Fit an upright label rectangle inside all three edges, with a 2-unit gap.
-  // Opposite-edge weights give its centre without changing the triangle's angles.
+  // Fit a smaller label near the unknown vertex C, keeping a 2-unit edge gap.
+  // Remaining barycentric space goes toward C instead of the triangle centre.
   const area2=Math.abs((b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]));
   const edges=points.map((_,i)=>{
     const p=points[(i+1)%3],q=points[(i+2)%3],dx=q[0]-p[0],dy=q[1]-p[1];
     return {length:Math.hypot(dx,dy),support:.32*Math.abs(dy)+.52*Math.abs(dx)};
   });
   const maxSize=(area2-2*edges.reduce((s,e)=>s+e.length,0))/edges.reduce((s,e)=>s+e.support,0);
-  const weights=edges.map(e=>(maxSize*e.support+2*e.length)/area2);
+  const size=Math.min(17,maxSize*.9);
+  const weights=edges.map(e=>(size*e.support+2*e.length)/area2);
+  weights[2]+=1-weights.reduce((sum,w)=>sum+w,0);
   const x=points.reduce((s,p,i)=>s+p[0]*weights[i],0),y=points.reduce((s,p,i)=>s+p[1]*weights[i],0);
-  return {points,question:{x,y,size:Math.min(23,maxSize)}};
+  return {points,question:{x,y,size}};
 }
 
 export function diagram(f){

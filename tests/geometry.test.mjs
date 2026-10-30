@@ -8,7 +8,7 @@ const cross=(a,b,p)=>(b[0]-a[0])*(p[1]-a[1])-(b[1]-a[1])*(p[0]-a[0]);
 test('Every inner-angle label fits wholly inside the triangle with space from its edges',()=>{
   for(const f of faces.filter(f=>f.kind==='inner')){
     const {points,question:q}=triangleLayout(f);
-    assert.ok(q.size>=14,'Narrowest diagram remains readable');
+    assert.ok(q.size>=13&&q.size<=17,'Question marks are compact but readable');
     for(const dx of [-.32,.32])for(const dy of [-.52,.52]){
       const corner=[q.x+dx*q.size,q.y+dy*q.size];
       for(let i=0;i<3;i++){
@@ -30,6 +30,20 @@ test('Exterior-angle labels stay beyond the unknown vertex and above its extensi
       assert.ok(corner[1]<=c[1]-1.99);
       assert.ok(cross(c,b,corner)/Math.hypot(b[0]-c[0],b[1]-c[1])>=1.99);
       assert.ok(corner[0]<158&&corner[1]>0);
+    }
+  }
+});
+
+test('Inner labels sit next to both sides of the unknown angle, not the triangle centre',()=>{
+  for(const f of faces.filter(f=>f.kind==='inner')){
+    const {points,question:q}=triangleLayout(f);
+    for(const i of [1,2]){
+      const a=points[i],b=points[(i+1)%3];
+      const gaps=[];
+      for(const dx of [-.32,.32])for(const dy of [-.52,.52]){
+        gaps.push(cross(a,b,[q.x+dx*q.size,q.y+dy*q.size])/Math.hypot(b[0]-a[0],b[1]-a[1]));
+      }
+      assert.ok(Math.abs(Math.min(...gaps)-2)<1e-8,JSON.stringify(f));
     }
   }
 });

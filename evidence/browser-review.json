@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "sourceHash": "e59d43e1bdff3bc506ecbfe7dbcc55301bf04d5228efd44499ac685853da696e",
-  "checkedAt": "2026-10-30T01:36:09.228Z",
+  "sourceHash": "24a6be4ad5d3169060b0d44249741ead1fb6ef717009ff32fb8cb2657a407cad",
+  "checkedAt": "2026-10-30T01:52:14.942Z",
   "screenshots": [
     "evidence/prism-flip-desktop.png",
     "evidence/prism-mobile-insets.png",
@@ -16,7 +16,11 @@
     "evidence/prism-angle-mobile.png",
     "evidence/prism-angle-narrow.png",
     "evidence/prism-angle-outer-desktop.png",
-    "evidence/prism-angle-mobile-outer.png"
+    "evidence/prism-angle-mobile-outer.png",
+    "evidence/prism-vertex-desktop.png",
+    "evidence/prism-vertex-flip.png",
+    "evidence/prism-vertex-mobile.png",
+    "evidence/prism-vertex-mobile-narrow.png"
   ],
   "gameplay": {
     "allStagesActualBrowserWon": 12,
@@ -174,5 +178,174 @@
       "passed": true
     },
     "tests": 24
+  },
+  "previousVertexReview": {
+    "sourceHash": "e59d43e1bdff3bc506ecbfe7dbcc55301bf04d5228efd44499ac685853da696e",
+    "checkedAt": "2026-10-30T01:36:09.228Z"
+  },
+  "vertexLabelRevision": {
+    "scope": "Only diagram question size and location; unchanged gameplay/assessment retain their previous reviews",
+    "size": "17 SVG units instead of 23; narrow triangles adapt to 90% of maximum fitting size",
+    "position": "Adjacent to both edges of unknown vertex C, 2-unit clearance",
+    "desktop": "All 12 rounds, 120 rendered diagram faces inspected for non-overlap",
+    "flip": "Round 5 D hand and preview",
+    "mobile": "390px, rounds 5 and 11 including narrow triangle and exterior faces",
+    "measurements": {
+      "desktop": [
+        {
+          "round": 1,
+          "faces": 0,
+          "minGap": null
+        },
+        {
+          "round": 2,
+          "faces": 0,
+          "minGap": null
+        },
+        {
+          "round": 3,
+          "faces": 8,
+          "minGap": 1.989077031840921
+        },
+        {
+          "round": 4,
+          "faces": 8,
+          "minGap": 1.989077031840921
+        },
+        {
+          "round": 5,
+          "faces": 10,
+          "minGap": 1.989077031840921
+        },
+        {
+          "round": 6,
+          "faces": 12,
+          "minGap": 1.9890770318409208
+        },
+        {
+          "round": 7,
+          "faces": 10,
+          "minGap": 1.989077031840921
+        },
+        {
+          "round": 8,
+          "faces": 12,
+          "minGap": 1.989077031840921
+        },
+        {
+          "round": 9,
+          "faces": 14,
+          "minGap": 1.9890770318409208
+        },
+        {
+          "round": 10,
+          "faces": 14,
+          "minGap": 1.9890770318409208
+        },
+        {
+          "round": 11,
+          "faces": 16,
+          "minGap": 1.989077031840921
+        },
+        {
+          "round": 12,
+          "faces": 16,
+          "minGap": 1.989077031840921
+        }
+      ],
+      "mobileRound11": [
+        {
+          "gap": 2.089863110529251,
+          "height": 14.56309986114502,
+          "inner": true
+        },
+        {
+          "gap": 2.089863110529251,
+          "height": 14.56309986114502,
+          "inner": false
+        },
+        {
+          "gap": 2.0898676945983254,
+          "height": 14.56310749053955,
+          "inner": true
+        },
+        {
+          "gap": 2.0898676945983254,
+          "height": 14.56310749053955,
+          "inner": false
+        },
+        {
+          "gap": 2.3901012987584664,
+          "height": 10.679612159729004,
+          "inner": true
+        },
+        {
+          "gap": 2.089849358322013,
+          "height": 14.56310749053955,
+          "inner": false
+        },
+        {
+          "gap": 2.390156307587304,
+          "height": 10.679612159729004,
+          "inner": true
+        },
+        {
+          "gap": 2.0899387476689384,
+          "height": 14.563048362731934,
+          "inner": false
+        },
+        {
+          "gap": 2.0899387476689384,
+          "height": 14.563048362731934,
+          "inner": true
+        },
+        {
+          "gap": 2.0899387476689384,
+          "height": 14.563048362731934,
+          "inner": false
+        },
+        {
+          "gap": 2.0899410397034757,
+          "height": 14.56310749053955,
+          "inner": true
+        },
+        {
+          "gap": 2.0899410397034757,
+          "height": 14.56310749053955,
+          "inner": false
+        },
+        {
+          "gap": 2.0898676945982544,
+          "height": 14.56310749053955,
+          "inner": true
+        },
+        {
+          "gap": 2.0898676945982544,
+          "height": 14.56310749053955,
+          "inner": false
+        },
+        {
+          "gap": 2.0898676945982544,
+          "height": 14.56310749053955,
+          "inner": true
+        },
+        {
+          "gap": 2.0898676945982544,
+          "height": 14.56310749053955,
+          "inner": false
+        },
+        {
+          "gap": 2.2208135505061364,
+          "height": 9.708738327026367,
+          "inner": true
+        },
+        {
+          "gap": 2.2780843904840538,
+          "height": 12.621359825134276,
+          "inner": false
+        }
+      ]
+    },
+    "tests": 25
   }
 }
