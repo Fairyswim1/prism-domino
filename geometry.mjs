@@ -13,7 +13,7 @@ export function triangleLayout(f){
     // Keep the complete question mark in the exterior wedge, above the extension.
     const size=17,w=.32*size,h=.52*size,dx=b[0]-c[0],dy=b[1]-c[1];
     const offset=Math.max(w+2,w+(2*Math.hypot(dx,dy)+dx*(2*h+2))/-dy);
-    return {points,question:{x:c[0]+offset,y:c[1]-h-2,size}};
+    return withAngleArc(f,points,{x:c[0]+offset,y:c[1]-h-2,size});
   }
 
   // Fit a smaller label near the unknown vertex C, keeping a 2-unit edge gap.
@@ -28,13 +28,34 @@ export function triangleLayout(f){
   const weights=edges.map(e=>(size*e.support+2*e.length)/area2);
   weights[2]+=1-weights.reduce((sum,w)=>sum+w,0);
   const x=points.reduce((s,p,i)=>s+p[0]*weights[i],0),y=points.reduce((s,p,i)=>s+p[1]*weights[i],0);
-  return {points,question:{x,y,size}};
+  return withAngleArc(f,points,{x,y,size});
+}
+
+function withAngleArc(f,points,question){
+  const [a,b,c]=points,q={...question},inner=f.kind==='inner';
+  const w=.32*q.size,h=.52*q.size,verticalGap=c[1]-q.y-h;
+  const desiredHorizontal=Math.sqrt(Math.max(0,10**2-verticalGap**2));
+  if(inner){
+    // Move only as far as necessary along the base to leave room for the arc.
+    const dx=b[0]-a[0],dy=b[1]-a[1],length=Math.hypot(dx,dy);
+    const clearance=(dx*(q.y-a[1])-dy*(q.x-a[0])-w*Math.abs(dy)-h*Math.abs(dx))/length;
+    const available=Math.max(0,(clearance-2)*length/-dy);
+    q.x-=Math.max(0,Math.min(available,q.x-(c[0]-w-desiredHorizontal)));
+  }else{
+    q.x+=Math.max(0,Math.min(158-q.x-w,c[0]+w+desiredHorizontal-q.x));
+  }
+  const textDistance=Math.hypot(Math.max(0,Math.abs(q.x-c[0])-w),Math.max(0,Math.abs(q.y-c[1])-h));
+  const radius=Math.min(8,textDistance-2,.25*Math.hypot(b[0]-c[0],b[1]-c[1]),.25*Math.hypot(a[0]-c[0],a[1]-c[1]));
+  const endAngle=Math.atan2(b[1]-c[1],b[0]-c[0]);
+  const arc={center:c,radius,start:[c[0]+(inner?-radius:radius),c[1]],end:[c[0]+radius*Math.cos(endAngle),c[1]+radius*Math.sin(endAngle)],startAngle:inner?-Math.PI:0,endAngle,sweep:inner?1:0};
+  return {points,question:q,arc};
 }
 
 export function diagram(f){
   if(f.kind==='given')return '<div class="given">'+f.value+'<small>°</small></div>';
-  const {points,question:q}=triangleLayout(f),[a,b,c]=points;
+  const {points,question:q,arc}=triangleLayout(f),[a,b,c]=points;
   const fmt=p=>p.map(n=>n.toFixed(2)).join(','),ext=f.kind==='outer';
+  const marker='<path class="angle-arc" d="M'+fmt(arc.start)+' A'+arc.radius.toFixed(2)+','+arc.radius.toFixed(2)+' 0 0 '+arc.sweep+' '+fmt(arc.end)+'" fill="none" stroke="#ac5e32" stroke-width="1.6" stroke-linecap="round"/>';
   const question='<text class="unknown" text-anchor="middle" x="'+q.x+'" y="'+q.y+'"'+' dominant-baseline="central" style="font-size:'+q.size+'px"'+'>?</text>';
-  return '<svg viewBox="0 0 160 132" aria-hidden="true"><path d="M'+fmt(a)+' L'+fmt(b)+' L'+fmt(c)+' Z" fill="#e1eadb" stroke="#385d60" stroke-width="2.2"/>'+(ext?'<path d="M'+fmt(c)+' l27,0" stroke="#ac5e32" stroke-width="2.2"/>':'')+'<text x="'+(a[0]+2)+'" y="114">'+f.a+'°</text><text text-anchor="middle" x="'+b[0]+'" y="'+Math.max(15,b[1]-7)+'">'+f.b+'°</text>'+question+'<text class="caption" x="80" y="129" text-anchor="middle">'+(ext?'바깥 각':'안쪽 각')+'</text></svg>';
+  return '<svg viewBox="0 0 160 132" aria-hidden="true"><path d="M'+fmt(a)+' L'+fmt(b)+' L'+fmt(c)+' Z" fill="#e1eadb" stroke="#385d60" stroke-width="2.2"/>'+(ext?'<path d="M'+fmt(c)+' l27,0" stroke="#ac5e32" stroke-width="2.2"/>':'')+'<text x="'+(a[0]+2)+'" y="114">'+f.a+'°</text><text text-anchor="middle" x="'+b[0]+'" y="'+Math.max(15,b[1]-7)+'">'+f.b+'°</text>'+marker+question+'<text class="caption" x="80" y="129" text-anchor="middle">'+(ext?'바깥 각':'안쪽 각')+'</text></svg>';
 }

@@ -1,0 +1,74 @@
+[
+  {
+    "round": 1,
+    "arcs": 0,
+    "diagrams": 0,
+    "minLabelEdgeGap": null
+  },
+  {
+    "round": 2,
+    "arcs": 0,
+    "diagrams": 0,
+    "minLabelEdgeGap": null
+  },
+  {
+    "round": 3,
+    "arcs": 8,
+    "diagrams": 8,
+    "minLabelEdgeGap": 1.989077031840921
+  },
+  {
+    "round": 4,
+    "arcs": 8,
+    "diagrams": 8,
+    "minLabelEdgeGap": 1.989077031840921
+  },
+  {
+    "round": 5,
+    "arcs": 10,
+    "diagrams": 10,
+    "minLabelEdgeGap": 1.989077031840921
+  },
+  {
+    "round": 6,
+    "arcs": 12,
+    "diagrams": 12,
+    "minLabelEdgeGap": 1.9890770318409208
+  },
+  {
+    "round": 7,
+    "arcs": 10,
+    "diagrams": 10,
+    "minLabelEdgeGap": 1.989077031840921
+  },
+  {
+    "round": 8,
+    "arcs": 12,
+    "diagrams": 12,
+    "minLabelEdgeGap": 1.989077031840921
+  },
+  {
+    "round": 9,
+    "arcs": 14,
+    "diagrams": 14,
+    "minLabelEdgeGap": 1.9890770318409208
+  },
+  {
+    "round": 10,
+    "arcs": 14,
+    "diagrams": 14,
+    "minLabelEdgeGap": 1.9890770318409208
+  },
+  {
+    "round": 11,
+    "arcs": 16,
+    "diagrams": 16,
+    "minLabelEdgeGap": 1.989077031840921
+  },
+  {
+    "round": 12,
+    "arcs": 16,
+    "diagrams": 16,
+    "minLabelEdgeGap": 1.989077031840921
+  }
+]

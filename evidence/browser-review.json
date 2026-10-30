@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "sourceHash": "24a6be4ad5d3169060b0d44249741ead1fb6ef717009ff32fb8cb2657a407cad",
-  "checkedAt": "2026-10-30T01:52:14.942Z",
+  "sourceHash": "73650731d4497b9efb75816c30c44c13ef5f513850a17a99e7c8c0e877d4dbb7",
+  "checkedAt": "2026-10-30T02:47:05.959Z",
   "screenshots": [
     "evidence/prism-flip-desktop.png",
     "evidence/prism-mobile-insets.png",
@@ -20,7 +20,9 @@
     "evidence/prism-vertex-desktop.png",
     "evidence/prism-vertex-flip.png",
     "evidence/prism-vertex-mobile.png",
-    "evidence/prism-vertex-mobile-narrow.png"
+    "evidence/prism-vertex-mobile-narrow.png",
+    "evidence/prism-arc-desktop.png",
+    "evidence/prism-arc-mobile.png"
   ],
   "gameplay": {
     "allStagesActualBrowserWon": 12,
@@ -347,5 +349,90 @@
       ]
     },
     "tests": 25
+  },
+  "previousArcReview": {
+    "sourceHash": "24a6be4ad5d3169060b0d44249741ead1fb6ef717009ff32fb8cb2657a407cad",
+    "checkedAt": "2026-10-30T01:52:14.942Z"
+  },
+  "angleArcRevision": {
+    "scope": "Only target-angle SVG arc and minimal label separation; previous unchanged gameplay/assessment evidence retained",
+    "desktop": "120 diagram faces across all 12 rounds; each has one target-angle arc; labels stay within correct region",
+    "flip": "Round 5 D hand and preview",
+    "mobile": "390px round 11, inner, exterior and narrow triangle preview inspected",
+    "measurements": [
+      {
+        "round": 1,
+        "arcs": 0,
+        "diagrams": 0,
+        "minLabelEdgeGap": null
+      },
+      {
+        "round": 2,
+        "arcs": 0,
+        "diagrams": 0,
+        "minLabelEdgeGap": null
+      },
+      {
+        "round": 3,
+        "arcs": 8,
+        "diagrams": 8,
+        "minLabelEdgeGap": 1.989077031840921
+      },
+      {
+        "round": 4,
+        "arcs": 8,
+        "diagrams": 8,
+        "minLabelEdgeGap": 1.989077031840921
+      },
+      {
+        "round": 5,
+        "arcs": 10,
+        "diagrams": 10,
+        "minLabelEdgeGap": 1.989077031840921
+      },
+      {
+        "round": 6,
+        "arcs": 12,
+        "diagrams": 12,
+        "minLabelEdgeGap": 1.9890770318409208
+      },
+      {
+        "round": 7,
+        "arcs": 10,
+        "diagrams": 10,
+        "minLabelEdgeGap": 1.989077031840921
+      },
+      {
+        "round": 8,
+        "arcs": 12,
+        "diagrams": 12,
+        "minLabelEdgeGap": 1.989077031840921
+      },
+      {
+        "round": 9,
+        "arcs": 14,
+        "diagrams": 14,
+        "minLabelEdgeGap": 1.9890770318409208
+      },
+      {
+        "round": 10,
+        "arcs": 14,
+        "diagrams": 14,
+        "minLabelEdgeGap": 1.9890770318409208
+      },
+      {
+        "round": 11,
+        "arcs": 16,
+        "diagrams": 16,
+        "minLabelEdgeGap": 1.989077031840921
+      },
+      {
+        "round": 12,
+        "arcs": 16,
+        "diagrams": 16,
+        "minLabelEdgeGap": 1.989077031840921
+      }
+    ],
+    "tests": 26
   }
 }
