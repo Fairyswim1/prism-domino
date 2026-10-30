@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "sourceHash": "73650731d4497b9efb75816c30c44c13ef5f513850a17a99e7c8c0e877d4dbb7",
-  "checkedAt": "2026-10-30T02:47:05.959Z",
+  "sourceHash": "7b7f739d81c3f7998c3f00b696f5d0625d10535192f48c2339a65c2ac3bd5d18",
+  "checkedAt": "2026-10-30T06:17:08.914Z",
   "screenshots": [
     "evidence/prism-flip-desktop.png",
     "evidence/prism-mobile-insets.png",
@@ -49,9 +49,10 @@
     "retry": true,
     "persistence": true,
     "report": true,
-    "export": true,
+    "export": false,
     "mobile": true,
-    "details": "10 submissions: wrong 115 then retry 65 excluded; one hinted exterior excluded; independent counts 2/2,2/2,3/2; explanation and teacher note persisted; export preview JSON contains 10 attempts, 1 hint and reviewed result. All synthetic local test data."
+    "details": "10 submissions: wrong 115 then retry 65 excluded; one hinted exterior excluded; independent counts 2/2,2/2,3/2; explanation and teacher note persisted; export preview JSON contains 10 attempts, 1 hint and reviewed result. All synthetic local test data.",
+    "jsonUiRemoved": true
   },
   "typography": {
     "status": "passed",
@@ -434,5 +435,27 @@
       }
     ],
     "tests": 26
+  },
+  "previousJsonUiReview": {
+    "checkedAt": "2026-10-30T02:47:05.959Z",
+    "sourceHash": "73650731d4497b9efb75816c30c44c13ef5f513850a17a99e7c8c0e877d4dbb7",
+    "export": true
+  },
+  "jsonUiRemoval": {
+    "status": "passed",
+    "checkedAt": "2026-10-30T06:16:46.888Z",
+    "scope": "JSON raw preview and download removed. Readable learning results and local progress storage retained. Gameplay, assessment grading and layout otherwise unchanged.",
+    "report": {
+      "id": "prism-domino",
+      "report": true,
+      "noJson": true,
+      "exportButtons": 0,
+      "errors": []
+    },
+    "commonSubmission": {
+      "submitted": true,
+      "result": "내 답: 방정식",
+      "persistedAfterReload": true
+    }
   }
 }
