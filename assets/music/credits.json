@@ -1,0 +1,42 @@
+{
+  "title": "빛이 만나는 자리",
+  "origin": "Original synthesized stereo compositions; no third-party samples",
+  "profile": {
+    "title": "빛이 만나는 자리",
+    "root": 67,
+    "bpm": 74,
+    "color": "glass",
+    "minor": false,
+    "motif": [
+      0,
+      7,
+      4,
+      9,
+      12,
+      7,
+      14,
+      12
+    ]
+  },
+  "generator": "scripts/compose-music.py",
+  "tracks": [
+    {
+      "mode": "focus",
+      "bpm": 74,
+      "seconds": 51.8918820861678,
+      "peak": 0.2648639069021206,
+      "rms": 0.06666881194212688,
+      "seamDelta": 0.0022014117641243683,
+      "sha256": "3fcd3f376c93fef1481d6ef866375a965d43b4906b2c2a34a11be0e8377fbc9a"
+    },
+    {
+      "mode": "energy",
+      "bpm": 98,
+      "seconds": 39.183673469387756,
+      "peak": 0.35274409877531065,
+      "rms": 0.0882133084154055,
+      "seamDelta": 0.0053903005493328715,
+      "sha256": "86c5e7cf5da3126aa268544ea54c68c56da265a7a22b2917d9925d01b54d7557"
+    }
+  ]
+}

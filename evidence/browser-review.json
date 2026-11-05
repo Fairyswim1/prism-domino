@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "checkedAt": "2026-10-30T07:51:44.915Z",
-  "sourceHash": "03a05e35219c30e0c6cc36c96c7854771b0ea4f1763df5f9b7671bbaefbddae5",
+  "sourceHash": "1d6a1f8c7b874e7adba892acfb809fea664d68e44c55de005b195e0268df0cb2",
   "screenshots": [
     "evidence/math-prism-domino-desktop.png",
     "evidence/math-prism-domino-mobile.png",
@@ -50,5 +50,26 @@
   "limitations": [
     "This revision checks all starting layouts, representative play and the existing complete engine test suite; it does not replay every stage to victory.",
     "No student learning-effect study."
-  ]
+  ],
+  "audioRefresh": {
+    "id": "prism-domino",
+    "checkedAt": "2026-11-05T04:11:23.792324+00:00",
+    "method": "Chrome actual UI clicks through cua_repl; music HTMLAudioElement readyState/currentTime; effects analyser test",
+    "focus": {
+      "playing": true,
+      "readyState": 4
+    },
+    "energy": {
+      "playing": true,
+      "readyState": 4
+    },
+    "effectsSignal": true,
+    "independentEffectsMute": true,
+    "musicStop": true,
+    "mobileWidth": 390,
+    "horizontalOverflow": false,
+    "musicMenuInBounds": true,
+    "consoleErrors": [],
+    "scope": "Audio-only change. Previous full gameplay/assessment verification retained; all automated gameplay tests rerun."
+  }
 }
