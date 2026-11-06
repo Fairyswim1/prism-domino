@@ -2,224 +2,259 @@ TAP version 13
 # Subtest: 27 new tasks across three forms have correct mathematics and unique identities
 ok 1 - 27 new tasks across three forms have correct mathematics and unique identities
   ---
-  duration_ms: 4.5033
+  duration_ms: 8.0666
   ...
 # Subtest: Wrong attempt, retry, hint and reused form cannot count as independent
 ok 2 - Wrong attempt, retry, hint and reused form cannot count as independent
   ---
-  duration_ms: 3.4137
+  duration_ms: 3.0685
   ...
 # Subtest: Two independent tasks per element plus explanation review are separate
 ok 3 - Two independent tasks per element plus explanation review are separate
   ---
-  duration_ms: 1.4352
+  duration_ms: 1.4698
   ...
 # Subtest: All tiles can be used, round 1
 ok 4 - All tiles can be used, round 1
   ---
-  duration_ms: 6.9057
+  duration_ms: 4.8124
   ...
 # Subtest: All tiles can be used, round 2
 ok 5 - All tiles can be used, round 2
   ---
-  duration_ms: 0.5452
+  duration_ms: 0.658
   ...
 # Subtest: All tiles can be used, round 3
 ok 6 - All tiles can be used, round 3
   ---
-  duration_ms: 0.575
+  duration_ms: 0.3654
   ...
 # Subtest: All tiles can be used, round 4
 ok 7 - All tiles can be used, round 4
   ---
-  duration_ms: 0.4441
+  duration_ms: 0.3105
   ...
 # Subtest: All tiles can be used, round 5
 ok 8 - All tiles can be used, round 5
   ---
-  duration_ms: 1.9904
+  duration_ms: 1.8031
   ...
 # Subtest: All tiles can be used, round 6
 ok 9 - All tiles can be used, round 6
   ---
-  duration_ms: 0.3448
+  duration_ms: 0.3673
   ...
 # Subtest: All tiles can be used, round 7
 ok 10 - All tiles can be used, round 7
   ---
-  duration_ms: 0.3622
+  duration_ms: 0.4175
   ...
 # Subtest: All tiles can be used, round 8
 ok 11 - All tiles can be used, round 8
   ---
-  duration_ms: 0.3185
+  duration_ms: 0.4059
   ...
 # Subtest: All tiles can be used, round 9
 ok 12 - All tiles can be used, round 9
   ---
-  duration_ms: 0.792
+  duration_ms: 1.0334
   ...
 # Subtest: All tiles can be used, round 10
 ok 13 - All tiles can be used, round 10
   ---
-  duration_ms: 1.252
+  duration_ms: 1.29
   ...
 # Subtest: All tiles can be used, round 11
 ok 14 - All tiles can be used, round 11
   ---
-  duration_ms: 0.5572
+  duration_ms: 0.5649
   ...
 # Subtest: All tiles can be used, round 12
 ok 15 - All tiles can be used, round 12
   ---
-  duration_ms: 1.2176
+  duration_ms: 0.9392
   ...
 # Subtest: Triangle faces remain nondegenerate and angles correct
 ok 16 - Triangle faces remain nondegenerate and angles correct
   ---
-  duration_ms: 0.4371
+  duration_ms: 0.383
   ...
 # Subtest: Blind first matching tile succeeds early but fails later
 ok 17 - Blind first matching tile succeeds early but fails later
   ---
-  duration_ms: 0.2912
+  duration_ms: 0.1872
   ...
 # Subtest: Resource tradeoff: three rewinds then restart needed
 ok 18 - Resource tradeoff: three rewinds then restart needed
   ---
-  duration_ms: 0.3165
+  duration_ms: 0.2037
   ...
 # Subtest: Wrong connection keeps tile and logs first error
 ok 19 - Wrong connection keeps tile and logs first error
   ---
-  duration_ms: 0.17
+  duration_ms: 0.1089
   ...
 # Subtest: Used tile cannot be spent twice and undo restores exact endpoint
 ok 20 - Used tile cannot be spent twice and undo restores exact endpoint
   ---
-  duration_ms: 0.1924
+  duration_ms: 0.1051
   ...
 # Subtest: Tutorial completes by actual flip and keeps normal storage isolated
 ok 21 - Tutorial completes by actual flip and keeps normal storage isolated
   ---
-  duration_ms: 1.2196
+  duration_ms: 1.2731
   ...
 # Subtest: Every inner-angle label fits wholly inside the triangle with space from its edges
 ok 22 - Every inner-angle label fits wholly inside the triangle with space from its edges
   ---
-  duration_ms: 4.0568
+  duration_ms: 4.5032
   ...
 # Subtest: Resized diagrams preserve the actual known triangle angles
 ok 23 - Resized diagrams preserve the actual known triangle angles
   ---
-  duration_ms: 2.4052
+  duration_ms: 2.4723
   ...
 # Subtest: Exterior-angle labels stay beyond the unknown vertex and above its extension
 ok 24 - Exterior-angle labels stay beyond the unknown vertex and above its extension
   ---
-  duration_ms: 1.666
+  duration_ms: 1.4323
   ...
 # Subtest: Inner labels remain near the base beside the unknown angle
 ok 25 - Inner labels remain near the base beside the unknown angle
   ---
-  duration_ms: 1.8561
+  duration_ms: 2.1933
   ...
 # Subtest: Angle arcs join the correct rays, preserve the angle and avoid the question label
 ok 26 - Angle arcs join the correct rays, preserve the angle and avoid the question label
   ---
-  duration_ms: 21.0688
+  duration_ms: 18.0653
   ...
 # Subtest: Fractions bind only their denominator, preserving rational coefficients and signs
 ok 27 - Fractions bind only their denominator, preserving rational coefficients and signs
   ---
-  duration_ms: 1.0873
+  duration_ms: 1.2026
   ...
 # Subtest: Math renders decimals, powers, coordinates, comparisons and operations without changing original source
 ok 28 - Math renders decimals, powers, coordinates, comparisons and operations without changing original source
   ---
-  duration_ms: 13.9625
+  duration_ms: 15.5322
   ...
 # Subtest: Text and unsafe input are escaped; no HTML commands are accepted
 ok 29 - Text and unsafe input are escaped; no HTML commands are accepted
   ---
-  duration_ms: 0.2605
+  duration_ms: 0.2313
   ...
 # Subtest: Every actual prompt, hint and choice preserves its text across all three variants
 ok 30 - Every actual prompt, hint and choice preserves its text across all three variants
   ---
-  duration_ms: 10.3788
+  duration_ms: 11.2216
   ...
 # Subtest: Blank symbols and incomplete learner notation stay readable
 ok 31 - Blank symbols and incomplete learner notation stay readable
   ---
-  duration_ms: 0.6321
+  duration_ms: 0.7113
   ...
 # Subtest: music starts only after explicit play; loops and resumes without resetting position
 ok 32 - music starts only after explicit play; loops and resumes without resetting position
   ---
-  duration_ms: 3.4285
+  duration_ms: 2.171
   ...
 # Subtest: mode change preserves playing state and writes only preferences
 ok 33 - mode change preserves playing state and writes only preferences
   ---
-  duration_ms: 2.2684
+  duration_ms: 3.2688
   ...
 # Subtest: saved mode and volume load without autoplay
 ok 34 - saved mode and volume load without autoplay
   ---
-  duration_ms: 0.2763
+  duration_ms: 0.5058
   ...
 # Subtest: invalid preferences and modes cannot select arbitrary sources
 ok 35 - invalid preferences and modes cannot select arbitrary sources
   ---
-  duration_ms: 0.26
+  duration_ms: 0.4153
   ...
 # Subtest: blocked playback exposes recovery without claiming playback
 ok 36 - blocked playback exposes recovery without claiming playback
   ---
-  duration_ms: 0.2749
+  duration_ms: 0.4291
   ...
 # Subtest: pause cancels a pending play state update
 ok 37 - pause cancels a pending play state update
   ---
-  duration_ms: 0.2156
+  duration_ms: 0.3843
   ...
 # Subtest: older play completion cannot silence the newer request
 ok 38 - older play completion cannot silence the newer request
   ---
-  duration_ms: 0.2698
+  duration_ms: 0.371
   ...
 # Subtest: muted effects never start; enable, play and mute stop active oscillators
 ok 39 - muted effects never start; enable, play and mute stop active oscillators
   ---
-  duration_ms: 2.9413
+  duration_ms: 2.6364
   ...
 # Subtest: preference survives new controller and test checks a generated waveform
 ok 40 - preference survives new controller and test checks a generated waveform
   ---
-  duration_ms: 90.0428
+  duration_ms: 88.5698
   ...
 # Subtest: blocked playback returns an error instead of falsely reporting enabled sound
 ok 41 - blocked playback returns an error instead of falsely reporting enabled sound
   ---
-  duration_ms: 0.6895
+  duration_ms: 0.8354
   ...
 # Subtest: muting while resume is pending cannot re-enable playback
 ok 42 - muting while resume is pending cannot re-enable playback
   ---
-  duration_ms: 0.4215
+  duration_ms: 0.3864
   ...
 # Subtest: unavailable storage does not prevent sound playback
 ok 43 - unavailable storage does not prevent sound playback
   ---
-  duration_ms: 0.6021
+  duration_ms: 0.4722
   ...
-1..43
-# tests 43
+# Subtest: first visit always starts, including an old shared off URL
+ok 44 - first visit always starts, including an old shared off URL
+  ---
+  duration_ms: 1.5257
+  ...
+# Subtest: opening, abandoning, and refreshing do not mark the guide finished
+ok 45 - opening, abandoning, and refreshing do not mark the guide finished
+  ---
+  duration_ms: 1.0506
+  ...
+# Subtest: completion and explicit skip persist per game, with a clean shareable URL
+ok 46 - completion and explicit skip persist per game, with a clean shareable URL
+  ---
+  duration_ms: 2.6614
+  ...
+# Subtest: old valid completion is preserved; corrupt or started records do not skip
+ok 47 - old valid completion is preserved; corrupt or started records do not skip
+  ---
+  duration_ms: 0.5045
+  ...
+# Subtest: replay and practice never overwrite campaign or assessment records
+ok 48 - replay and practice never overwrite campaign or assessment records
+  ---
+  duration_ms: 0.3018
+  ...
+# Subtest: blocked local storage uses session completion without a redirect loop
+ok 49 - blocked local storage uses session completion without a redirect loop
+  ---
+  duration_ms: 0.3569
+  ...
+# Subtest: both storage APIs blocked: same-tab history survives reload but shared URL does not skip
+ok 50 - both storage APIs blocked: same-tab history survives reload but shared URL does not skip
+  ---
+  duration_ms: 0.3616
+  ...
+1..50
+# tests 50
 # suites 0
-# pass 43
+# pass 50
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 283.7479
+# duration_ms 289.5592

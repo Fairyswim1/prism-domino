@@ -1,12 +1,13 @@
 {
   "status": "passed",
   "checkedAt": "2026-10-30T07:51:44.915Z",
-  "sourceHash": "1d6a1f8c7b874e7adba892acfb809fea664d68e44c55de005b195e0268df0cb2",
+  "sourceHash": "546ddc7dec323419199e34b087414cf9cb2e15e4153df50afa77d07bd6366c94",
   "screenshots": [
     "evidence/math-prism-domino-desktop.png",
     "evidence/math-prism-domino-mobile.png",
     "evidence/math-prism-domino-assessment.png",
-    "evidence/math-tutorial.png"
+    "evidence/math-tutorial.png",
+    "evidence/first-visit-mobile.png"
   ],
   "checks": [
     "All stage starting layouts checked at 390px; desktop final-stage screenshot inspected.",
@@ -71,5 +72,18 @@
     "musicMenuInBounds": true,
     "consoleErrors": [],
     "scope": "Audio-only change. Previous full gameplay/assessment verification retained; all automated gameplay tests rerun."
+  },
+  "firstVisitRevision": {
+    "checkedAt": "2026-11-06T04:45:01.504Z",
+    "id": "prism-domino",
+    "firstVisitOff": true,
+    "startedStep": "같은 각도를 이어 주세요",
+    "skipCleanUrl": true,
+    "reloadNoTour": true,
+    "replay": true,
+    "keyboardEscape": true,
+    "mobileWidth": 390,
+    "previousSourceHash": "1d6a1f8c7b874e7adba892acfb809fea664d68e44c55de005b195e0268df0cb2",
+    "scope": "First-visit decision, isolated tutorial initialization, exit/reload and replay. Prior math and assessment browser evidence retained; existing automated suites rerun."
   }
 }
